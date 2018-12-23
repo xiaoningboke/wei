@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>声达官网</title>
+    <link rel="stylesheet" href="./css/csh.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="header w">
+        <img src="./image/logo.png" alt="">
+        <div class="right ">
+            <ul class="nav">
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./web/about.html">关于我们</a></li>
+                <li><a href="./web/ccjj.html">产品简介</a></li>
+                <li><a href="./web/news.html">新闻中心</a></li>
+                <li><a href="./web/zxly.html">在线留言</a></li>
+                <li>400-123-1231</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <!-- 轮播图开始-->
+        <div class="all w" id='all'>
+            <div class="screen" id="screen">
+                <ul id="ul">
+                    <li><img src="image/1.png"/></li>
+                    <li><img src="image/2.png"/></li>
+                    <li><img src="image/3.png"/></li>
+                </ul>
+                <ol></ol>
+                <div id="arr"><span id="left"><</span><span id="right">></span></div>
+            </div>
+        </div>
+        <!--轮播图结束-->
+        <h2>环保让生活更美好</h2>
+        <h3>企业介绍</h3>
+        <div class="xian"></div>
+        <h4>BUSINESS INTRODUCTION</h4>
+
+        <div class="qyjs w">
+            <p>
+                上海声达木业有限公司创建于1998年，主要生产和经营高档装饰板、多层板、进口木方及国产细木工板、衫木集成板、生态板、中密度板、宝丽板、复合地板等各类新型建筑材料。上海众多重点工程都采用了声达板材，如上海金茂大厦、凯悦大酒店、国际会议中心、上海国际网球中心、新黄浦投资大厦、梅龙镇广场、东方电视台等建筑所用的细木工板、水泥模板、三夹板等装饰板材都由声达公司提供。 </p>
+            <p>声达木业是上海地区板材行业销售龙头企业，二十多年专业板材批发经营经历10年阿里诚信通会 员。产品热销好美家、百安居等大型建材超市，在上海市有四十多家专卖店，以优异的品质、一流的服务、实惠的价格广受好评。</p>
+        </div>
+        <h3>产品介绍</h3>
+        <div class="xian"></div>
+        <h4>PRODUCT INTRODUCTION</h4>
+        <div class="w">
+            <div class="cp left">
+                <img src="./image/c1.jpg" alt="">
+                <p>非洲橡木板</p>
+            </div>
+            <div class="cp left">
+                <img src="./image/c2.jpg" alt="">
+                <p>非洲橡木板</p>
+            </div>
+            <div class="cp left">
+                <img src="./image/c3.jpg" alt="">
+                <p>非洲橡木板</p>
+            </div>
+            <div class="cp left">
+                <img src="./image/c4.jpg" alt="">
+                <p>非洲橡木板</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <h3>新闻资讯</h3>
+        <div class="xian"></div>
+        <h4>NEW INFORMATION</h4>
+        <div class="w">
+            <div class="xw left">
+                <img src="./image/x1.jpg" alt="">
+                <h6>我不是药神，我只是声达净醛抗菌地板</h6>
+                <p>我不是药神，但我想保卫您和您家人的健康 ...</p>
+            </div>
+            <div class="xw left">
+                <img src="./image/x2.jpg" alt="">
+                <h6>我不是药神，我只是声达净醛抗菌地板</h6>
+                <p>我不是药神，但我想保卫您和您家人的健康 ...</p>
+            </div>
+            <div class="xw left">
+                <img src="./image/x3.jpg" alt="">
+                <h6>我不是药神，我只是声达净醛抗菌地板</h6>
+                <p>我不是药神，但我想保卫您和您家人的健康 ...</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <h3>合作伙伴</h3>
+        <div class="xian"></div>
+        <h4>COOPERATIVE PARTNER</h4>
+        <div class="hz w">
+            <img src="./image/h1.png" alt="">
+            <img src="./image/h2.png" alt="">
+            <img src="./image/h3.png" alt="">
+            <img src="./image/h4.png" alt="">
+            <img src="./image/h5.png" alt="">
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="footer">上海声达木业有限公司 电话：400-185-9696 地址：上海市沪太路6188号 COPYRIGHT©2017 版权所有 沪ICP备09019840号-2</div>
+</div>
+</body>
+</html>
+
+<script>
+    //1.获取相关元素。
+    var box = document.getElementById("all");
+    var ul = box.children[0].children[0];
+    var ol = box.children[0].children[1];
+    var ulLiArr = ul.children;
+    //2.补齐相互盒子
+    //1.复制第一张图片所在的li，填入所在的ul中。
+    var newLi = ulLiArr[0].cloneNode(true);
+    ul.appendChild(newLi);
+    //2.生成相关的ol中的li。
+    for (var i = 0; i < ulLiArr.length - 1; i++) {
+        var newOlLi = document.createElement("li");
+        newOlLi.innerHTML = i + 1;
+        ol.appendChild(newOlLi);
+    }
+    //3.点亮第一个ol中的li。
+    var olLiArr = ol.children;
+    ol.children[0].className = "current";
+    //3.鼠标放到小方块儿上，轮播图片。
+    for (var i = 0; i < olLiArr.length; i++) {
+        olLiArr[i].index = i;
+        olLiArr[i].onmouseover = function () {
+            for (var j = 0; j < olLiArr.length; j++) {
+                olLiArr[j].className = "";
+            }
+            olLiArr[this.index].className = "current";
+            animate(ul, -this.index * ul.children[0].offsetWidth);
+            key = square = this.index;
+        }
+    }
+    //4.添加定时器。
+    var timer = null;
+    var key = 0;
+    var square = 0;
+    timer = setInterval(autoPlay, 1000);
+
+    function autoPlay() {
+        key++;
+        square++;
+        if (key > olLiArr.length) {
+            key = 1;
+            ul.style.left = 0;
+        }
+        animate(ul, -key * ul.children[0].offsetWidth);
+
+        square = square > olLiArr.length - 1 ? 0 : square;
+        for (var j = 0; j < olLiArr.length; j++) {
+            olLiArr[j].className = "";
+        }
+        olLiArr[square].className = "current";
+    }
+
+    //5.鼠标移开开启定时器，鼠标放上去开启定时器。
+    box.onmouseover = function () {
+        clearInterval(timer);
+    }
+    box.onmouseout = function () {
+        timer = setInterval(autoPlay, 1000);
+    }
+    //6.左右切换的按钮。
+    var btnArr = box.children[0].children[2].children;
+    btnArr[0].onclick = function () {
+        key--;
+        square--;
+        if (key < 0) {
+            key = 4;
+            ul.style.left = -5 * ul.children[0].offsetWidth + "px";
+        }
+        animate(ul, -key * ul.children[0].offsetWidth);
+
+        square = square < 0 ? olLiArr.length - 1 : square;
+        for (var j = 0; j < olLiArr.length; j++) {
+            olLiArr[j].className = "";
+        }
+        olLiArr[square].className = "current";
+    }
+    btnArr[1].onclick = function () {
+        autoPlay();
+    }
+
+
+    //  基本封装
+    function animate(obj, target) {
+        clearInterval(obj.timer);
+        var speed = obj.offsetLeft < target ? 15 : -15;
+        obj.timer = setInterval(function () {
+            var result = target - obj.offsetLeft;
+            obj.style.left = obj.offsetLeft + speed + "px";
+            if (Math.abs(result) <= 15) {
+                obj.style.left = target + "px";
+                clearInterval(obj.timer);
+            }
+        }, 10);
+    }
+</script>

@@ -1,0 +1,17 @@
+.nav li{
+    float: left;
+    width: 140px;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+}
+.footer{
+    text-align: center;
+    color: #ffffff;
+    background-color: #2c2c2c;
+    height: 60px;
+    line-height: 60px;
+}
+.bd img{
+    width: 1200px;
+}
